@@ -1,0 +1,11 @@
+#!/bin/bash
+
+docker run -ti --rm \
+       -e DISPLAY=$DISPLAY \
+       -v /tmp/.X11-unix:/tmp/.X11-unix \
+       -v `pwd`:/workspace \
+       -h play \
+       -p 9000 \
+       -w /workspace \
+       -v `pwd`/.docker-netbeans:/home/developer  \
+       fgrehm/netbeans:v8.0.1 bash
