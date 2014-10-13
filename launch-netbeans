@@ -5,7 +5,7 @@ docker run -ti --rm \
        -v /tmp/.X11-unix:/tmp/.X11-unix \
        -v `pwd`:/workspace \
        -h play \
-       -p 9000 \
+       -p 9000:9000 \
        -w /workspace \
        -v `pwd`/.docker-netbeans:/home/developer  \
        --name netbeans \
