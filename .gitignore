@@ -15,3 +15,5 @@ dist
 /.settings
 /nbproject/private/
 /.docker-netbeans
+/build/
+app.*.db*

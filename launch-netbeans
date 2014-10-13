@@ -8,4 +8,6 @@ docker run -ti --rm \
        -p 9000 \
        -w /workspace \
        -v `pwd`/.docker-netbeans:/home/developer  \
+       --name netbeans \
+       --link postgres:pg \
        fgrehm/netbeans:v8.0.1 bash
